@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#101010">
+
+    <!-- Toolbar -->
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/colorPrimary"-->
+<!--        android:elevation="4dp"-->
+<!--        android:padding="8dp">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/toolbarTitle"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Home"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold" />-->
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+    <!-- Horizontal Layout for TextViews -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="36dp"
+        android:gravity="center">
+
+        <!-- Audio Settings TextView -->
+        <TextView
+            android:id="@+id/audioSettingsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Audio Settings"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:background="@drawable/textview_background"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Playback Call TextView -->
+        <TextView
+
+            android:id="@+id/playbackCallTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Playback Call"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:background="@drawable/textview_background"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Bluetooth TextView -->
+
+    </LinearLayout>
+
+    <!-- Microphone Button -->
+    <ImageButton
+        android:id="@+id/microphoneButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_microphone"
+        android:contentDescription="Microphone"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:padding="24dp"
+        android:background="@drawable/button_background" />
+    <!-- Bluetooth TextView -->
+    <TextView
+        android:id="@+id/bluetoothTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth Settings"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:background="@drawable/textview_background"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true" />
+</LinearLayout>

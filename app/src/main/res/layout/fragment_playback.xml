@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F3F3F3">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recorded Files"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        android:padding="16dp"
+        android:textColor="#333333"
+        android:gravity="center" />
+
+    <!-- CardView for ListView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginHorizontal="8dp"
+        android:elevation="6dp"
+        android:padding="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="#7C7B7B">
+
+        <ListView
+            android:id="@+id/recordedFilesListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="2dp"
+            android:padding="8dp" />
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/bluetoothTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth Settings"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Bluetooth Status -->
+    <TextView
+        android:id="@+id/bluetoothStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth is Off"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Turn On Bluetooth Button -->
+    <Button
+        android:id="@+id/turnOnBluetoothButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Turn On Bluetooth"
+        android:layout_marginBottom="10dp"
+
+        android:textColor="@android:color/white" />
+
+    <!-- Turn Off Bluetooth Button -->
+    <Button
+        android:id="@+id/turnOffBluetoothButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Turn Off Bluetooth"
+
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
